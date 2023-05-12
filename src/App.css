@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+}
+
+.shape-1 {
+  position: absolute;
+  top: 81%;
+  left: 20.5%;
+  background-color: violet;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.shape-2 {
+  position: absolute;
+  top: -12%;
+  left: 71%;
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}

@@ -1,0 +1,19 @@
+.message-container {
+    margin-top: 5%;
+}
+
+.message-header {
+    color: black;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursives;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.8%;
+}
+
+.message-content {
+    color: yellow;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    justify-content: center;
+}
