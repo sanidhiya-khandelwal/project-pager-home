@@ -56,3 +56,36 @@
   }
 
 }
+
+
+@media(min-width:769px) and (max-width:1024px) {
+  .shape-1 {
+    top: 83.5%;
+    left: 18.5%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .shape-2 {
+    top: -19%;
+    left: 70%;
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media(min-width:1025px) and (max-width:1200px) {
+  .shape-1 {
+    top: 83.5%;
+    left: 18.5%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .shape-2 {
+    top: -19%;
+    left: 70%;
+    height: 120px;
+    width: 120px;
+  }
+}
