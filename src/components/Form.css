@@ -3,7 +3,7 @@
 .formcontainer {
     /* border: 4px solid black; */
     border-radius: 10px;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     width: 50%;
     text-align: center;
     display: flex;
@@ -92,4 +92,38 @@ button:hover {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
 
+}
+
+/* media queries */
+
+@media(min-width:300px) and (max-width:480px) {
+    .formcontainer {
+        max-width: 80%;
+        padding: 25px;
+        border: 5px solid red;
+        margin-top: 25%;
+    }
+
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    input {
+        padding: 8px;
+        min-height: 25px;
+        font-size: 15px;
+    }
+
+    svg {
+        width: 15px;
+    }
+
+    ::placeholder {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 8px;
+    }
 }
