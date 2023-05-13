@@ -4,6 +4,7 @@
     /* border: 4px solid black; */
     border-radius: 10px;
     /* min-height: 50vh; */
+    padding: 25px;
     width: 50%;
     text-align: center;
     display: flex;
@@ -125,5 +126,38 @@ button:hover {
     button {
         font-size: 15px;
         padding: 8px;
+    }
+}
+
+
+@media(min-width:481px) and (max-width:768px) {
+    .formcontainer {
+        max-width: 80%;
+        padding: 25px;
+        border: 5px solid purple;
+        margin-top: 25%;
+    }
+
+    .heading h2 {
+        font-size: 35px;
+    }
+
+    input {
+        padding: 10px;
+        min-height: 25px;
+        font-size: 20px;
+    }
+
+    svg {
+        width: 20px;
+    }
+
+    ::placeholder {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px;
     }
 }

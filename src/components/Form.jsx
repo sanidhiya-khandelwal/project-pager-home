@@ -3,9 +3,11 @@ import './Form.css'
 const Form = () => {
     const [name, setName] = React.useState('')
     const [message, setMessage] = React.useState('')
+    const [date, setDate] = React.useState('')
 
     const handleNameChange = (e) => {
         setName(e.target.value);
+        setDate(new Date().toLocaleString());
         // console.log(e.target.value);
     }
     const handleMessageChange = (e) => {
@@ -14,7 +16,7 @@ const Form = () => {
     }
 
     const handleSubmit = () => {
-        console.log(`before trim ${name} : ${message}`);
+        console.log(`before trim ${name} : ${message} + ${date}`);
 
         const formName = name.trim();
         const formMessage = message.trim();
@@ -42,17 +44,20 @@ const Form = () => {
                 body: JSON.stringify(
                     {
                         userName: name,
-                        userMessage: message
+                        userMessage: message,
+                        userDate: date
                     })
             }).then(
                 (repsonse) => {
                     if (repsonse.status === 200) {
                         setName('')
                         setMessage('')
+                        setDate('')
                         alert('Message sent successfully');
                     }
                 }
             )
+        // var d = new Date();
         console.log(`after trim ${formName} : ${formMessage}`);
 
     }
